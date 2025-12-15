@@ -421,10 +421,25 @@ a {
     text-align: center;
 }
 
-.discover-card:hover {
+/* .discover-card:hover {
     transform: translateY(-10px);
     background: rgba(255, 255, 255, 0.15);
+} */
+
+
+    
+
+/* Add hover effects for cards for interactivity. */
+
+
+
+.discover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
 }
+
+
 
 .discover-card img {
     border-radius: 8px;
@@ -490,6 +505,43 @@ footer {
     border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+
+
+        /* Added footer styles for consistency and readability. */
+
+
+        
+
+
+/* Footer – simple, readable, traditional */
+.site-footer {
+    background-color: #f8f9fa;
+    padding: 40px 0 30px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.site-footer .footer-text {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 15px;
+    letter-spacing: 0.3px;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0 8px;
+    color: #6c757d;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.footer-social a:hover {
+    color: #212529;
+}
+
+
+
+
 /* =========================================
    Responsive Adjustments
    ========================================= */
@@ -509,6 +561,12 @@ footer {
     .navbar-custom {
         height: auto;
         padding: 15px 0;
+
+
+        /* Improve sticky navbar contrast: */
+
+        background-color: #fff; /* Light background for readability */
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     /* Reset Navbar Brand specific placement for mobile/collapsed view */
